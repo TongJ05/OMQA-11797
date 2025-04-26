@@ -1,0 +1,2 @@
+slurmstepd: error: *** JOB 4519316 ON babel-1-27 CANCELLED AT 2025-04-07T10:46:24 ***
+slurmstepd: error: Detected 68 oom_kill events in StepId=4519316.batch. Some of the step tasks have been OOM Killed.

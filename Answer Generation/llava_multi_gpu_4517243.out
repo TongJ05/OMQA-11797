@@ -1,0 +1,44 @@
+starting time: Sun Apr  6 17:32:41 EDT 2025
+running LLaVA-Next多GPU推理测试...
+GPU信息:
+Sun Apr  6 17:32:41 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.35.03              Driver Version: 560.35.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100 80GB PCIe          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   42C    P0             58W /  219W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100 80GB PCIe          On  |   00000000:61:00.0 Off |                    0 |
+| N/A   43C    P0             59W /  219W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+=== LLaVA-Next WebQA多GPU推理脚本 ===
+模型路径:       /path/to/llava-next-model
+输入文件:       /data/user_data/ayliu2/WebQA_val.json
+输出文件:       /data/user_data/ayliu2/WebQA_results_test.json
+图像目录:       /data/user_data/ayliu2/WebQA_imgs_7z_chunks/images
+GPU数量:        2
+最大实例数:     20
+温度:           0.2
+最大新token数:  512
+=========================================
+
+从 /data/user_data/ayliu2/WebQA_val.json 加载数据
+扫描有效实例...
+找到 20 个有效实例，共检查 20 个 (跳过 0 个).
+将 20 个实例分成 2 个批次，每个批次约 10 个实例
+开始多GPU处理，时间: 2025-04-06 17:32:49

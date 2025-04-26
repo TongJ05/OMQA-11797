@@ -1,0 +1,127 @@
+/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/file_download.py:933: UserWarning: `local_dir_use_symlinks` parameter is deprecated and will be ignored. The process to download files to a local folder has been updated and do not rely on symlinks anymore. You only need to pass a destination folder as`local_dir`.
+For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/download#download-files-to-local-folder.
+  warnings.warn(
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/datat/user_data/ayliu2/huggingface/llava-next-interleave-qwen-7b/.cache/huggingface'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/datat/user_data/ayliu2/huggingface/llava-next-interleave-qwen-7b/.cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/datat/user_data/ayliu2/huggingface/llava-next-interleave-qwen-7b'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/datat/user_data/ayliu2/huggingface'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/datat/user_data/ayliu2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/datat/user_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 296, in snapshot_download
+    thread_map(
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 270, in _inner_hf_hub_download
+    return hf_hub_download(
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 941, in hf_hub_download
+    return _hf_hub_download_to_local_dir(
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1159, in _hf_hub_download_to_local_dir
+    paths = get_local_download_paths(local_dir=local_dir, filename=filename)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/_local_folder.py", line 207, in get_local_download_paths
+    metadata_path = _huggingface_dir(local_dir) / "download" / f"{sanitized_filename}.metadata"
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/_local_folder.py", line 410, in _huggingface_dir
+    path.mkdir(exist_ok=True, parents=True)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1179, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1179, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1179, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  [Previous line repeated 3 more times]
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+PermissionError: [Errno 13] Permission denied: '/datat'
+/home/ayliu2/LLaVA-NeXT/playground/demo/interleave_demo.py:219: UserWarning: You have not specified a value for the `type` parameter. Defaulting to the 'tuples' format for chatbot messages, but this is deprecated and will be removed in a future version of Gradio. Please set type='messages' instead, which uses openai-style dictionaries with 'role' and 'content' keys.
+  chatbot = gr.Chatbot(
+/home/ayliu2/LLaVA-NeXT/playground/demo/interleave_demo.py:219: DeprecationWarning: The 'bubble_full_width' parameter is deprecated and will be removed in a future version. This parameter no longer has any effect.
+  chatbot = gr.Chatbot(
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/transformers/utils/hub.py", line 424, in cached_files
+    hf_hub_download(
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/datat/user_data/ayliu2/huggingface/llava-next-interleave-qwen-7b'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ayliu2/LLaVA-NeXT/playground/demo/interleave_demo.py", line 280, in <module>
+    tokenizer, model, image_processor, context_len = load_pretrained_model(args.model_path, args.model_base, model_name, args.load_8bit, args.load_4bit)
+  File "/home/ayliu2/LLaVA-NeXT/llava/model/builder.py", line 177, in load_pretrained_model
+    tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 945, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 777, in get_tokenizer_config
+    resolved_config_file = cached_file(
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/transformers/utils/hub.py", line 266, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/transformers/utils/hub.py", line 470, in cached_files
+    resolved_files = [
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/transformers/utils/hub.py", line 471, in <listcomp>
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision) for filename in full_filenames
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/transformers/utils/hub.py", line 134, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/datat/user_data/ayliu2/huggingface/llava-next-interleave-qwen-7b'. Use `repo_type` argument if needed.

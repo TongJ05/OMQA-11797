@@ -1,0 +1,526 @@
+/var/spool/slurmd/job4519416/slurm_script: line 17: cd: /datat/user_data/ayliu2/huggingface: No such file or directory
+/var/spool/slurmd/job4519416/slurm_script: line 64: cd: /datat/user_data/ayliu2/huggingface: No such file or directory
+  Running command python setup.py egg_info
+  /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/__init__.py:94: _DeprecatedInstaller: setuptools.installer and fetch_build_eggs are deprecated.
+  !!
+
+          ********************************************************************************
+          Requirements should be satisfied by a PEP 517 installer.
+          If you are using pip, you can try `pip install --use-pep517`.
+          ********************************************************************************
+
+  !!
+    dist.fetch_build_eggs(dist.setup_requires)
+
+
+  torch.__version__  = 2.1.2+cu121
+
+
+  running egg_info
+  creating /tmp/pip-pip-egg-info-mb0vdgn0/flash_attn.egg-info
+  writing /tmp/pip-pip-egg-info-mb0vdgn0/flash_attn.egg-info/PKG-INFO
+  writing dependency_links to /tmp/pip-pip-egg-info-mb0vdgn0/flash_attn.egg-info/dependency_links.txt
+  writing requirements to /tmp/pip-pip-egg-info-mb0vdgn0/flash_attn.egg-info/requires.txt
+  writing top-level names to /tmp/pip-pip-egg-info-mb0vdgn0/flash_attn.egg-info/top_level.txt
+  writing manifest file '/tmp/pip-pip-egg-info-mb0vdgn0/flash_attn.egg-info/SOURCES.txt'
+  reading manifest file '/tmp/pip-pip-egg-info-mb0vdgn0/flash_attn.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no files found matching '*.cu' under directory 'flash_attn'
+  warning: no files found matching '*.h' under directory 'flash_attn'
+  warning: no files found matching '*.cuh' under directory 'flash_attn'
+  warning: no files found matching '*.cpp' under directory 'flash_attn'
+  warning: no files found matching '*.hpp' under directory 'flash_attn'
+  adding license file 'LICENSE'
+  adding license file 'AUTHORS'
+  writing manifest file '/tmp/pip-pip-egg-info-mb0vdgn0/flash_attn.egg-info/SOURCES.txt'
+  Running command python setup.py bdist_wheel
+
+
+  torch.__version__  = 2.1.2+cu121
+
+
+  /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/__init__.py:94: _DeprecatedInstaller: setuptools.installer and fetch_build_eggs are deprecated.
+  !!
+
+          ********************************************************************************
+          Requirements should be satisfied by a PEP 517 installer.
+          If you are using pip, you can try `pip install --use-pep517`.
+          ********************************************************************************
+
+  !!
+    dist.fetch_build_eggs(dist.setup_requires)
+  running bdist_wheel
+  Guessing wheel URL:  https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+  Precompiled wheel not found. Building from source...
+  running build
+  running build_py
+  creating build/lib.linux-x86_64-cpython-310/flash_attn
+  copying flash_attn/flash_blocksparse_attn_interface.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+  copying flash_attn/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+  copying flash_attn/bert_padding.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+  copying flash_attn/flash_attn_interface.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+  copying flash_attn/flash_blocksparse_attention.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+  copying flash_attn/flash_attn_triton_og.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+  copying flash_attn/flash_attn_triton.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+  copying flash_attn/fused_softmax.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+  creating build/lib.linux-x86_64-cpython-310/hopper
+  copying hopper/benchmark_flash_attention_fp8.py -> build/lib.linux-x86_64-cpython-310/hopper
+  copying hopper/__init__.py -> build/lib.linux-x86_64-cpython-310/hopper
+  copying hopper/test_kvcache.py -> build/lib.linux-x86_64-cpython-310/hopper
+  copying hopper/benchmark_split_kv.py -> build/lib.linux-x86_64-cpython-310/hopper
+  copying hopper/flash_attn_interface.py -> build/lib.linux-x86_64-cpython-310/hopper
+  copying hopper/test_attn_kvcache.py -> build/lib.linux-x86_64-cpython-310/hopper
+  copying hopper/test_util.py -> build/lib.linux-x86_64-cpython-310/hopper
+  copying hopper/test_flash_attn.py -> build/lib.linux-x86_64-cpython-310/hopper
+  copying hopper/generate_kernels.py -> build/lib.linux-x86_64-cpython-310/hopper
+  copying hopper/benchmark_attn.py -> build/lib.linux-x86_64-cpython-310/hopper
+  copying hopper/padding.py -> build/lib.linux-x86_64-cpython-310/hopper
+  copying hopper/setup.py -> build/lib.linux-x86_64-cpython-310/hopper
+  creating build/lib.linux-x86_64-cpython-310/flash_attn/ops
+  copying flash_attn/ops/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops
+  copying flash_attn/ops/fused_dense.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops
+  copying flash_attn/ops/rms_norm.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops
+  copying flash_attn/ops/activations.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops
+  copying flash_attn/ops/layer_norm.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops
+  creating build/lib.linux-x86_64-cpython-310/flash_attn/models
+  copying flash_attn/models/bigcode.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+  copying flash_attn/models/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+  copying flash_attn/models/gpt.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+  copying flash_attn/models/gptj.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+  copying flash_attn/models/baichuan.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+  copying flash_attn/models/gpt_neox.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+  copying flash_attn/models/bert.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+  copying flash_attn/models/opt.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+  copying flash_attn/models/vit.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+  copying flash_attn/models/falcon.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+  copying flash_attn/models/llama.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+  copying flash_attn/models/btlm.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+  creating build/lib.linux-x86_64-cpython-310/flash_attn/utils
+  copying flash_attn/utils/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/utils
+  copying flash_attn/utils/benchmark.py -> build/lib.linux-x86_64-cpython-310/flash_attn/utils
+  copying flash_attn/utils/generation.py -> build/lib.linux-x86_64-cpython-310/flash_attn/utils
+  copying flash_attn/utils/pretrained.py -> build/lib.linux-x86_64-cpython-310/flash_attn/utils
+  copying flash_attn/utils/distributed.py -> build/lib.linux-x86_64-cpython-310/flash_attn/utils
+  creating build/lib.linux-x86_64-cpython-310/flash_attn/layers
+  copying flash_attn/layers/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/layers
+  copying flash_attn/layers/patch_embed.py -> build/lib.linux-x86_64-cpython-310/flash_attn/layers
+  copying flash_attn/layers/rotary.py -> build/lib.linux-x86_64-cpython-310/flash_attn/layers
+  creating build/lib.linux-x86_64-cpython-310/flash_attn/losses
+  copying flash_attn/losses/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/losses
+  copying flash_attn/losses/cross_entropy.py -> build/lib.linux-x86_64-cpython-310/flash_attn/losses
+  creating build/lib.linux-x86_64-cpython-310/flash_attn/modules
+  copying flash_attn/modules/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/modules
+  copying flash_attn/modules/mlp.py -> build/lib.linux-x86_64-cpython-310/flash_attn/modules
+  copying flash_attn/modules/block.py -> build/lib.linux-x86_64-cpython-310/flash_attn/modules
+  copying flash_attn/modules/mha.py -> build/lib.linux-x86_64-cpython-310/flash_attn/modules
+  copying flash_attn/modules/embedding.py -> build/lib.linux-x86_64-cpython-310/flash_attn/modules
+  creating build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+  copying flash_attn/flash_attn_triton_amd/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+  copying flash_attn/flash_attn_triton_amd/interface_torch.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+  copying flash_attn/flash_attn_triton_amd/bwd_ref.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+  copying flash_attn/flash_attn_triton_amd/fwd_decode.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+  copying flash_attn/flash_attn_triton_amd/test.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+  copying flash_attn/flash_attn_triton_amd/bench.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+  copying flash_attn/flash_attn_triton_amd/interface_fa.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+  copying flash_attn/flash_attn_triton_amd/bwd_prefill.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+  copying flash_attn/flash_attn_triton_amd/fwd_prefill.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+  copying flash_attn/flash_attn_triton_amd/fwd_ref.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+  copying flash_attn/flash_attn_triton_amd/utils.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+  creating build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+  copying flash_attn/ops/triton/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+  copying flash_attn/ops/triton/linear.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+  copying flash_attn/ops/triton/mlp.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+  copying flash_attn/ops/triton/cross_entropy.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+  copying flash_attn/ops/triton/k_activations.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+  copying flash_attn/ops/triton/layer_norm.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+  copying flash_attn/ops/triton/rotary.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+  running build_ext
+  /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/utils/cpp_extension.py:414: UserWarning: The detected CUDA version (12.5) has a minor version mismatch with the version that was used to compile PyTorch (12.1). Most likely this shouldn't be a problem.
+    warnings.warn(CUDA_MISMATCH_WARN.format(cuda_str_version, torch.version.cuda))
+  /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/utils/cpp_extension.py:424: UserWarning: There are no g++ version bounds defined for CUDA version 12.5
+    warnings.warn(f'There are no {compiler_name} version bounds defined for CUDA version {cuda_str_version}')
+  building 'flash_attn_2_cuda' extension
+  creating /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn
+  creating /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src
+  Emitting ninja build file /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/build.ninja...
+  Compiling objects...
+  Using envvar MAX_JOBS (16) as the number of workers...
+  [1/85] c++ -MMD -MF /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/flash_api.o.d -pthread -B /home/ayliu2/miniconda3/envs/llava_2/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ayliu2/miniconda3/envs/llava_2/include -fPIC -O2 -isystem /home/ayliu2/miniconda3/envs/llava_2/include -fPIC -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/flash_api.cpp -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/flash_api.o -O3 -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  FAILED: /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/flash_api.o
+  c++ -MMD -MF /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/flash_api.o.d -pthread -B /home/ayliu2/miniconda3/envs/llava_2/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ayliu2/miniconda3/envs/llava_2/include -fPIC -O2 -isystem /home/ayliu2/miniconda3/envs/llava_2/include -fPIC -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/flash_api.cpp -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/flash_api.o -O3 -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/flash_api.cpp: In function ‘std::vector<at::Tensor> flash::mha_fwd(at::Tensor&, const at::Tensor&, const at::Tensor&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, float, float, bool, int, int, float, bool, std::optional<at::Generator>)’:
+  /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/flash_api.cpp:489:13: error: invalid initialization of reference of type ‘const c10::optional<at::Generator>&’ from expression of type ‘std::optional<at::Generator>’
+    489 |             gen_, at::cuda::detail::getDefaultCUDAGenerator());
+        |             ^~~~
+  In file included from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/DeprecatedTypeProperties.h:9,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:33,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/Tensor.h:3,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/utils/variadic.h:3,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/detail/static.h:3,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/python.h:3,
+                   from /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/flash_api.cpp:6:
+  /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/Generator.h:167:75: note: in passing argument 1 of ‘T* at::get_generator_or_default(const c10::optional<at::Generator>&, const at::Generator&) [with T = at::CUDAGeneratorImpl]’
+    167 | static inline T* get_generator_or_default(const c10::optional<Generator>& gen, const Generator& default_gen) {
+        |                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+  /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/flash_api.cpp: In function ‘std::vector<at::Tensor> flash::mha_varlen_fwd(at::Tensor&, const at::Tensor&, const at::Tensor&, std::optional<at::Tensor>&, const at::Tensor&, const at::Tensor&, std::optional<at::Tensor>&, std::optional<const at::Tensor>&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, int, int, float, float, bool, bool, int, int, float, bool, std::optional<at::Generator>)’:
+  /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/flash_api.cpp:729:13: error: invalid initialization of reference of type ‘const c10::optional<at::Generator>&’ from expression of type ‘std::optional<at::Generator>’
+    729 |             gen_, at::cuda::detail::getDefaultCUDAGenerator());
+        |             ^~~~
+  In file included from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/DeprecatedTypeProperties.h:9,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:33,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/Tensor.h:3,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/utils/variadic.h:3,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/detail/static.h:3,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/python.h:3,
+                   from /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/flash_api.cpp:6:
+  /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/Generator.h:167:75: note: in passing argument 1 of ‘T* at::get_generator_or_default(const c10::optional<at::Generator>&, const at::Generator&) [with T = at::CUDAGeneratorImpl]’
+    167 | static inline T* get_generator_or_default(const c10::optional<Generator>& gen, const Generator& default_gen) {
+        |                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+  /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/flash_api.cpp: In function ‘std::vector<at::Tensor> flash::mha_bwd(const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, float, float, bool, int, int, float, bool, std::optional<at::Generator>, std::optional<at::Tensor>&)’:
+  /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/flash_api.cpp:937:9: error: invalid initialization of reference of type ‘const c10::optional<at::Generator>&’ from expression of type ‘std::optional<at::Generator>’
+    937 |         gen_, at::cuda::detail::getDefaultCUDAGenerator());
+        |         ^~~~
+  In file included from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/DeprecatedTypeProperties.h:9,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:33,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/Tensor.h:3,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/utils/variadic.h:3,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/detail/static.h:3,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/python.h:3,
+                   from /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/flash_api.cpp:6:
+  /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/Generator.h:167:75: note: in passing argument 1 of ‘T* at::get_generator_or_default(const c10::optional<at::Generator>&, const at::Generator&) [with T = at::CUDAGeneratorImpl]’
+    167 | static inline T* get_generator_or_default(const c10::optional<Generator>& gen, const Generator& default_gen) {
+        |                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+  /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/flash_api.cpp: In function ‘std::vector<at::Tensor> flash::mha_varlen_bwd(const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, const at::Tensor&, const at::Tensor&, std::optional<at::Tensor>&, int, int, float, float, bool, bool, int, int, float, bool, std::optional<at::Generator>, std::optional<at::Tensor>&)’:
+  /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/flash_api.cpp:1166:9: error: invalid initialization of reference of type ‘const c10::optional<at::Generator>&’ from expression of type ‘std::optional<at::Generator>’
+   1166 |         gen_, at::cuda::detail::getDefaultCUDAGenerator());
+        |         ^~~~
+  In file included from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/DeprecatedTypeProperties.h:9,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:33,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/Tensor.h:3,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/utils/variadic.h:3,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/detail/static.h:3,
+                   from /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/python.h:3,
+                   from /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/flash_api.cpp:6:
+  /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/ATen/core/Generator.h:167:75: note: in passing argument 1 of ‘T* at::get_generator_or_default(const c10::optional<at::Generator>&, const at::Generator&) [with T = at::CUDAGeneratorImpl]’
+    167 | static inline T* get_generator_or_default(const c10::optional<Generator>& gen, const Generator& default_gen) {
+        |                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+  [2/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim192_bf16_causal_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim192_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  FAILED: /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim192_bf16_causal_sm80.o
+  /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim192_bf16_causal_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim192_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  [3/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  FAILED: /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.o
+  /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  [4/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim160_fp16_causal_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim160_fp16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  FAILED: /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim160_fp16_causal_sm80.o
+  /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim160_fp16_causal_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim160_fp16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  [5/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim160_bf16_causal_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim160_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  FAILED: /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim160_bf16_causal_sm80.o
+  /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim160_bf16_causal_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim160_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  [6/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim192_bf16_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim192_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  FAILED: /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim192_bf16_sm80.o
+  /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim192_bf16_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim192_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  [7/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim256_bf16_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim256_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  FAILED: /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim256_bf16_sm80.o
+  /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim256_bf16_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim256_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  [8/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim256_fp16_causal_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim256_fp16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  FAILED: /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim256_fp16_causal_sm80.o
+  /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim256_fp16_causal_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim256_fp16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  [9/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim256_bf16_causal_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim256_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  [10/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim160_fp16_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim160_fp16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  FAILED: /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim160_fp16_sm80.o
+  /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim160_fp16_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim160_fp16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  [11/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim192_fp16_causal_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim192_fp16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  [12/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim128_fp16_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_fp16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  FAILED: /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_fp16_sm80.o
+  /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim128_fp16_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_fp16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  [13/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  FAILED: /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.o
+  /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  [14/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim128_fp16_causal_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_fp16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  [15/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim160_bf16_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim160_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  [16/85] /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim192_fp16_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim192_fp16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  FAILED: /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim192_fp16_sm80.o
+  /usr/local/cuda/bin/nvcc  -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src -I/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/cutlass/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/TH -I/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/ayliu2/miniconda3/envs/llava_2/include/python3.10 -c -c /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/csrc/flash_attn/src/flash_bwd_hdim192_fp16_sm80.cu -o /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim192_fp16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 2 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=flash_attn_2_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+  ninja: build stopped: subcommand failed.
+  Traceback (most recent call last):
+    File "/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/setup.py", line 486, in run
+      urllib.request.urlretrieve(wheel_url, wheel_filename)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/urllib/request.py", line 241, in urlretrieve
+      with contextlib.closing(urlopen(url, data)) as fp:
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/urllib/request.py", line 216, in urlopen
+      return opener.open(url, data, timeout)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/urllib/request.py", line 525, in open
+      response = meth(req, response)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/urllib/request.py", line 634, in http_response
+      response = self.parent.error(
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/urllib/request.py", line 563, in error
+      return self._call_chain(*args)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/urllib/request.py", line 496, in _call_chain
+      result = func(*args)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/urllib/request.py", line 643, in http_error_default
+      raise HTTPError(req.full_url, code, msg, hdrs, fp)
+  urllib.error.HTTPError: HTTP Error 404: Not Found
+
+  During handling of the above exception, another exception occurred:
+
+  Traceback (most recent call last):
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2100, in _run_ninja_build
+      subprocess.run(
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/subprocess.py", line 526, in run
+      raise CalledProcessError(retcode, process.args,
+  subprocess.CalledProcessError: Command '['ninja', '-v', '-j', '16']' returned non-zero exit status 1.
+
+  The above exception was the direct cause of the following exception:
+
+  Traceback (most recent call last):
+    File "<string>", line 2, in <module>
+    File "<pip-setuptools-caller>", line 34, in <module>
+    File "/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/setup.py", line 526, in <module>
+      setup(
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/__init__.py", line 117, in setup
+      return distutils.core.setup(**attrs)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 186, in setup
+      return run_commands(dist)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+      dist.run_commands()
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 983, in run_commands
+      self.run_command(cmd)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/dist.py", line 999, in run_command
+      super().run_command(command)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1002, in run_command
+      cmd_obj.run()
+    File "/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/setup.py", line 503, in run
+      super().run()
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/command/bdist_wheel.py", line 379, in run
+      self.run_command("build")
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/_distutils/cmd.py", line 339, in run_command
+      self.distribution.run_command(command)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/dist.py", line 999, in run_command
+      super().run_command(command)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1002, in run_command
+      cmd_obj.run()
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/_distutils/command/build.py", line 136, in run
+      self.run_command(cmd_name)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/_distutils/cmd.py", line 339, in run_command
+      self.distribution.run_command(command)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/dist.py", line 999, in run_command
+      super().run_command(command)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1002, in run_command
+      cmd_obj.run()
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 99, in run
+      _build_ext.run(self)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 365, in run
+      self.build_extensions()
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 873, in build_extensions
+      build_ext.build_extensions(self)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 481, in build_extensions
+      self._build_extensions_serial()
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 507, in _build_extensions_serial
+      self.build_extension(ext)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 264, in build_extension
+      _build_ext.build_extension(self, ext)
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 562, in build_extension
+      objects = self.compiler.compile(
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 686, in unix_wrap_ninja_compile
+      _write_ninja_file_and_compile_objects(
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1774, in _write_ninja_file_and_compile_objects
+      _run_ninja_build(
+    File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2116, in _run_ninja_build
+      raise RuntimeError(message) from e
+  RuntimeError: Error compiling objects for extension
+  error: subprocess-exited-with-error
+  
+  × python setup.py bdist_wheel did not run successfully.
+  │ exit code: 1
+  ╰─> See above for output.
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  full command: /home/ayliu2/miniconda3/envs/llava_2/bin/python -u -c '
+  exec(compile('"'"''"'"''"'"'
+  # This is <pip-setuptools-caller> -- a caller that pip uses to run setup.py
+  #
+  # - It imports setuptools before invoking setup.py, to enable projects that directly
+  #   import from `distutils.core` to work with newer packaging standards.
+  # - It provides a clear error message when setuptools is not installed.
+  # - It sets `sys.argv[0]` to the underlying `setup.py`, when invoking `setup.py` so
+  #   setuptools doesn'"'"'t think the script is `-c`. This avoids the following warning:
+  #     manifest_maker: standard file '"'"'-c'"'"' not found".
+  # - It generates a shim setup.py, for handling setup.cfg-only projects.
+  import os, sys, tokenize
+  
+  try:
+      import setuptools
+  except ImportError as error:
+      print(
+          "ERROR: Can not execute `setup.py` since setuptools is not available in "
+          "the build environment.",
+          file=sys.stderr,
+      )
+      sys.exit(1)
+  
+  __file__ = %r
+  sys.argv[0] = __file__
+  
+  if os.path.exists(__file__):
+      filename = __file__
+      with tokenize.open(__file__) as f:
+          setup_py_code = f.read()
+  else:
+      filename = "<auto-generated setuptools caller>"
+      setup_py_code = "from setuptools import setup; setup()"
+  
+  exec(compile(setup_py_code, filename, "exec"))
+  '"'"''"'"''"'"' % ('"'"'/tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/setup.py'"'"',), "<pip-setuptools-caller>", "exec"))' bdist_wheel -d /tmp/pip-wheel-qgn_dt1s
+  cwd: /tmp/pip-install-k9i34izp/flash-attn_2b7672e01ece44f5953809815f742050/
+  ERROR: Failed building wheel for flash-attn
+  Running command python setup.py clean
+
+
+  torch.__version__  = 2.1.2+cu121
+
+
+  /home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/setuptools/__init__.py:94: _DeprecatedInstaller: setuptools.installer and fetch_build_eggs are deprecated.
+  !!
+
+          ********************************************************************************
+          Requirements should be satisfied by a PEP 517 installer.
+          If you are using pip, you can try `pip install --use-pep517`.
+          ********************************************************************************
+
+  !!
+    dist.fetch_build_eggs(dist.setup_requires)
+  running clean
+  removing 'build/temp.linux-x86_64-cpython-310' (and everything under it)
+  removing 'build/lib.linux-x86_64-cpython-310' (and everything under it)
+  'build/bdist.linux-x86_64' does not exist -- can't clean it
+  'build/scripts-3.10' does not exist -- can't clean it
+  removing 'build'
+ERROR: Failed to build installable wheels for some pyproject.toml based projects (flash-attn)
+/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/file_download.py:933: UserWarning: `local_dir_use_symlinks` parameter is deprecated and will be ignored. The process to download files to a local folder has been updated and do not rely on symlinks anymore. You only need to pass a destination folder as`local_dir`.
+For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/download#download-files-to-local-folder.
+  warnings.warn(
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/datat/user_data/ayliu2/huggingface/llava-next-interleave-qwen-7b/.cache/huggingface'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/datat/user_data/ayliu2/huggingface/llava-next-interleave-qwen-7b/.cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/datat/user_data/ayliu2/huggingface/llava-next-interleave-qwen-7b'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/datat/user_data/ayliu2/huggingface'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/datat/user_data/ayliu2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/datat/user_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 296, in snapshot_download
+    thread_map(
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 270, in _inner_hf_hub_download
+    return hf_hub_download(
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 941, in hf_hub_download
+    return _hf_hub_download_to_local_dir(
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1159, in _hf_hub_download_to_local_dir
+    paths = get_local_download_paths(local_dir=local_dir, filename=filename)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/_local_folder.py", line 207, in get_local_download_paths
+    metadata_path = _huggingface_dir(local_dir) / "download" / f"{sanitized_filename}.metadata"
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/_local_folder.py", line 410, in _huggingface_dir
+    path.mkdir(exist_ok=True, parents=True)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1179, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1179, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1179, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  [Previous line repeated 3 more times]
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+PermissionError: [Errno 13] Permission denied: '/datat'
+/home/ayliu2/LLaVA-NeXT/playground/demo/interleave_demo.py:219: UserWarning: You have not specified a value for the `type` parameter. Defaulting to the 'tuples' format for chatbot messages, but this is deprecated and will be removed in a future version of Gradio. Please set type='messages' instead, which uses openai-style dictionaries with 'role' and 'content' keys.
+  chatbot = gr.Chatbot(
+/home/ayliu2/LLaVA-NeXT/playground/demo/interleave_demo.py:219: DeprecationWarning: The 'bubble_full_width' parameter is deprecated and will be removed in a future version. This parameter no longer has any effect.
+  chatbot = gr.Chatbot(
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/transformers/utils/hub.py", line 424, in cached_files
+    hf_hub_download(
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/datat/user_data/ayliu2/huggingface/llava-next-interleave-qwen-7b'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ayliu2/LLaVA-NeXT/playground/demo/interleave_demo.py", line 280, in <module>
+    tokenizer, model, image_processor, context_len = load_pretrained_model(args.model_path, args.model_base, model_name, args.load_8bit, args.load_4bit)
+  File "/home/ayliu2/LLaVA-NeXT/llava/model/builder.py", line 177, in load_pretrained_model
+    tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 945, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 777, in get_tokenizer_config
+    resolved_config_file = cached_file(
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/transformers/utils/hub.py", line 266, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/transformers/utils/hub.py", line 470, in cached_files
+    resolved_files = [
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/transformers/utils/hub.py", line 471, in <listcomp>
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision) for filename in full_filenames
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/transformers/utils/hub.py", line 134, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/datat/user_data/ayliu2/huggingface/llava-next-interleave-qwen-7b'. Use `repo_type` argument if needed.
+slurmstepd: error: Detected 17 oom_kill events in StepId=4519416.batch. Some of the step tasks have been OOM Killed.

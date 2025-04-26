@@ -1,0 +1,34 @@
+扫描实例:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 0 | 已检查: 1 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 1 | 已检查: 2 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 2 | 已检查: 3 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 3 | 已检查: 4 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 4 | 已检查: 5 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 5 | 已检查: 6 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 6 | 已检查: 7 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 7 | 已检查: 8 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 8 | 已检查: 9 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 9 | 已检查: 10 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 10 | 已检查: 11 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 11 | 已检查: 12 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 12 | 已检查: 13 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 13 | 已检查: 14 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 14 | 已检查: 15 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 15 | 已检查: 16 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 16 | 已检查: 17 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 17 | 已检查: 18 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 18 | 已检查: 19 | 已跳过: 0:   0%|          | 0/4966 [00:00<?, ?it/s]扫描实例 | 已找到: 18 | 已检查: 19 | 已跳过: 0:   0%|          | 19/4966 [00:00<00:26, 187.33it/s]扫描实例 | 已找到: 19 | 已检查: 20 | 已跳过: 0:   0%|          | 19/4966 [00:00<00:26, 187.33it/s]扫描实例 | 已找到: 19 | 已检查: 20 | 已跳过: 0:   0%|          | 19/4966 [00:00<00:27, 179.67it/s]
+Process Process-1:
+Traceback (most recent call last):
+  File "/home/ayliu2/LLaVA-NeXT/alex_script/inference_multi_gpu.py", line 103, in process_batch
+    from llava_next.model.builder import load_pretrained_model
+ModuleNotFoundError: No module named 'llava_next'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ayliu2/LLaVA-NeXT/alex_script/inference_multi_gpu.py", line 108, in process_batch
+    raise ImportError("未找到LLaVA-Next依赖，请安装LLaVA-Next。")
+ImportError: 未找到LLaVA-Next依赖，请安装LLaVA-Next。
+总进度:   0%|          | 0/20 [00:00<?, ?it/s]Process Process-2:
+Traceback (most recent call last):
+  File "/home/ayliu2/LLaVA-NeXT/alex_script/inference_multi_gpu.py", line 103, in process_batch
+    from llava_next.model.builder import load_pretrained_model
+ModuleNotFoundError: No module named 'llava_next'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/ayliu2/miniconda3/envs/llava_2/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ayliu2/LLaVA-NeXT/alex_script/inference_multi_gpu.py", line 108, in process_batch
+    raise ImportError("未找到LLaVA-Next依赖，请安装LLaVA-Next。")
+ImportError: 未找到LLaVA-Next依赖，请安装LLaVA-Next。
+slurmstepd: error: *** JOB 4517243 ON babel-5-31 CANCELLED AT 2025-04-06T17:58:24 ***
