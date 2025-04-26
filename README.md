@@ -8,7 +8,6 @@ To analyze a trained question classifier, you may find `q_classify_difficulty_ty
 
 The predicted question types for the test set of WebQA can be found [here](https://drive.google.com/file/d/1MBpHxSHbrtteHNyurAnk7sJGuMgn8LvE/view?usp=sharing).
 # Context Retriever
-The context retriever part is achieved using code in both `BM25_full_retrieval.ipynb` and `BM25+VLP.py`. The main code is adapted  from the original WebQA repository, and the original code based can be found [here] (https://github.com/WebQnA/WebQA_Baseline/blob/main/vlp/BM25_retrieval/BM25_full_retrieval.ipynb)
-
+The context retriever part is achieved using code in both `BM25_full_retrieval.ipynb` and `BM25+VLP.py`. The main code is adapted  from the original WebQA repository, and the original code based can be found [here](https://github.com/WebQnA/WebQA_Baseline/blob/main/vlp/BM25_retrieval/BM25_full_retrieval.ipynb).
 
 # Answer Generator
