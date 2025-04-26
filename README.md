@@ -11,3 +11,4 @@ The predicted question types for the test set of WebQA can be found [here](https
 The context retriever part is achieved using code in both `BM25_full_retrieval.ipynb` and `BM25+VLP.py`. The main code is adapted  from the original WebQA repository, and the original code based can be found [here](https://github.com/WebQnA/WebQA_Baseline/blob/main/vlp/BM25_retrieval/BM25_full_retrieval.ipynb).
 
 # Answer Generator
+LLaVa Next + Prompting is a multimodal AI system that uses a pre-trained LLaVA model (typically llava-v1.6-mistral-7b-hf) to process both images and text inputs. It handles prompts from structured JSON files containing instance IDs, questions, and context references, then generates text responses that are saved to JSON output files. The system is evaluated against a baseline testing dataset on the WebQA leaderboard.
